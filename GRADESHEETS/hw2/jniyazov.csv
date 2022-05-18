@@ -1,0 +1,29 @@
+Graded Commit:920bfa19dc581a32c2fdfe4c76fc6cb865bcf466
+
+TEST NAME, POINTS,OUT OF
+base_suite/EOF_test,1,1,
+base_suite/basic_test,1,1,
+base_suite/prefix_suffix_test,1,1,
+base_suite/valgrind_leak_test,1,1,
+base_suite/valgrind_uninitialized_test,1,1,
+blackbox_suite/long_hang,1,1,
+blackbox_suite/long_last,1,1,
+blackbox_suite/long_min,1,1,
+blackbox_suite/long_suffix,1,1,
+blackbox_suite/long_width,1,1,
+blackbox_suite/no_last,1,1,
+blackbox_suite/no_min,1,1,
+blackbox_suite/partial_hang,1,1,
+blackbox_suite/short_hang,1,1,
+blackbox_suite/short_last,1,1,
+blackbox_suite/short_min,1,1,
+blackbox_suite/short_prefix,1,1,
+blackbox_suite/valgrind_mixed_wps,1,1,
+blackbox_suite/valgrind_mixed_wpsh,1,1,
+error_suite/check_for_error,1,1,
+error_suite/check_for_no_error,0,1,The test crashed.: None
+error_suite/report_error,0,1,"1 assertion(s) failed.: tests/test_common.c:85: Invalid string content for report_error.Expected This is an error message, got This is an error message"
+error_suite/report_error_clear,0,1,The test crashed.: None
+error_suite/set_error,1,1,
+error_suite/set_error_long,1,1,
+total,22,25

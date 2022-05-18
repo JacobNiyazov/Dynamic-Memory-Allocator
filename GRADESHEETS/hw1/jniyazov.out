@@ -1,0 +1,170 @@
+[----] Criterion v2.3.3
+[====] Running 13 tests from argo_read_number_suite:
+[RUN ] argo_read_number_suite::capital_exponent_symbol
+[----] tests/argo_utils.h:97: Assertion failed: Invalid value in float_value. Got: 0.000000 | Expected: 34000000.000000
+[FAIL] argo_read_number_suite::capital_exponent_symbol: (0.00s)
+[RUN ] argo_read_number_suite::float_exact_one
+[PASS] argo_read_number_suite::float_exact_one: (0.00s)
+[RUN ] argo_read_number_suite::float_exact_zero
+[PASS] argo_read_number_suite::float_exact_zero: (0.00s)
+[RUN ] argo_read_number_suite::invalid_input_1
+[----] tests/argo_utils.h:71: Assertion failed: Invalid return for argo_read_number. Return value should not be: 0 | Got: 0
+[FAIL] argo_read_number_suite::invalid_input_1: (0.00s)
+[RUN ] argo_read_number_suite::invalid_input_2
+[----] tests/argo_utils.h:97: Assertion failed: Invalid value in float_value. Got: 0.000000 | Expected: 1000.000000
+[FAIL] argo_read_number_suite::invalid_input_2: (0.00s)
+[RUN ] argo_read_number_suite::invalid_input_3
+[----] tests/argo_utils.h:71: Assertion failed: Invalid return for argo_read_number. Return value should not be: 0 | Got: 0
+[FAIL] argo_read_number_suite::invalid_input_3: (0.00s)
+[RUN ] argo_read_number_suite::negative_exponent_negative_number
+[----] tests/argo_utils.h:97: Assertion failed: Invalid value in float_value. Got: 0.000000 | Expected: -890266.000000
+[FAIL] argo_read_number_suite::negative_exponent_negative_number: (0.00s)
+[RUN ] argo_read_number_suite::negative_int
+[----] tests/argo_utils.h:89: Assertion failed: Invalid value in int_value. Got: 0 | Expected: -3478913
+[FAIL] argo_read_number_suite::negative_int: (0.00s)
+[RUN ] argo_read_number_suite::plus_sign
+[----] tests/argo_utils.h:71: Assertion failed: Invalid return for argo_read_number. Return value should not be: 0 | Got: 0
+[FAIL] argo_read_number_suite::plus_sign: (0.00s)
+[RUN ] argo_read_number_suite::small_exponent_symbol
+[PASS] argo_read_number_suite::small_exponent_symbol: (0.00s)
+[RUN ] argo_read_number_suite::valid_float
+[PASS] argo_read_number_suite::valid_float: (0.00s)
+[RUN ] argo_read_number_suite::valid_int
+[PASS] argo_read_number_suite::valid_int: (0.00s)
+[RUN ] argo_read_number_suite::valid_string
+[PASS] argo_read_number_suite::valid_string: (0.00s)
+[====] Running 7 tests from argo_read_string_suite:
+[RUN ] argo_read_string_suite::control_character_check
+[----] tests/argo_utils.h:71: Assertion failed: Invalid return for argo_read_string. Return value should not be: 0 | Got: 0
+[FAIL] argo_read_string_suite::control_character_check: (0.00s)
+[RUN ] argo_read_string_suite::simple_valid_string
+[----] tests/argo_utils.h:113: Assertion failed: Invalid string content.
+[FAIL] argo_read_string_suite::simple_valid_string: (0.00s)
+[RUN ] argo_read_string_suite::valid_escape_hex_sequence
+[----] tests/argo_utils.h:113: Assertion failed: Invalid string content.
+[FAIL] argo_read_string_suite::valid_escape_hex_sequence: (0.00s)
+[RUN ] argo_read_string_suite::valid_escape_sequence
+[----] tests/argo_utils.h:113: Assertion failed: Invalid string content.
+[FAIL] argo_read_string_suite::valid_escape_sequence: (0.00s)
+[RUN ] argo_read_string_suite::valid_string
+[----] tests/argo_utils.h:113: Assertion failed: Invalid string content.
+[FAIL] argo_read_string_suite::valid_string: (0.00s)
+[RUN ] argo_read_string_suite::wrong_escape_hex_sequence
+[----] tests/argo_utils.h:71: Assertion failed: Invalid return for argo_read_string. Return value should not be: 0 | Got: 0
+[FAIL] argo_read_string_suite::wrong_escape_hex_sequence: (0.00s)
+[RUN ] argo_read_string_suite::wrong_escape_sequence
+[----] tests/argo_utils.h:71: Assertion failed: Invalid return for argo_read_string. Return value should not be: 0 | Got: 0
+[FAIL] argo_read_string_suite::wrong_escape_sequence: (0.00s)
+[====] Running 9 tests from argo_read_value_suite:
+[RUN ] argo_read_value_suite::array_empty_list
+ERRORERROR[----] tests/argo_utils.h:136: Assertion failed: Return value for argo_read_value() should not be null. Test failed.
+[FAIL] argo_read_value_suite::array_empty_list: (0.00s)
+[RUN ] argo_read_value_suite::array_storage_usage
+ERRORERRORERROR[----] tests/argo_value_tests.c:189: Assertion failed: Invalid number of ARGO_VALUE's being used in argo_value_storage. Got: 4 | Expected: 9
+[FAIL] argo_read_value_suite::array_storage_usage: (0.00s)
+[RUN ] argo_read_value_suite::nested_argo_value
+ERRORERRORERROR[----] tests/argo_utils.h:136: Assertion failed: Return value for argo_read_value() should not be null. Test failed.
+[FAIL] argo_read_value_suite::nested_argo_value: (0.00s)
+[RUN ] argo_read_value_suite::object_empty_member
+[----] tests/argo_value_tests.c:99: Unexpected signal caught below this line!
+[FAIL] argo_read_value_suite::object_empty_member: CRASH!
+[RUN ] argo_read_value_suite::simple_array_type
+ERRORERROR[----] tests/argo_utils.h:136: Assertion failed: Return value for argo_read_value() should not be null. Test failed.
+[FAIL] argo_read_value_suite::simple_array_type: (0.00s)
+[RUN ] argo_read_value_suite::simple_basic_type
+[PASS] argo_read_value_suite::simple_basic_type: (0.00s)
+[RUN ] argo_read_value_suite::simple_number_type
+[PASS] argo_read_value_suite::simple_number_type: (0.00s)
+[RUN ] argo_read_value_suite::simple_object_type
+[----] tests/argo_value_tests.c:56: Unexpected signal caught below this line!
+[FAIL] argo_read_value_suite::simple_object_type: CRASH!
+[RUN ] argo_read_value_suite::simple_string_type
+[PASS] argo_read_value_suite::simple_string_type: (0.00s)
+[====] Running 3 tests from argo_write_number_suite:
+[RUN ] argo_write_number_suite::exceed_max_digits
+[PASS] argo_write_number_suite::exceed_max_digits: (0.00s)
+[RUN ] argo_write_number_suite::valid_float
+[PASS] argo_write_number_suite::valid_float: (0.00s)
+[RUN ] argo_write_number_suite::valid_int
+[PASS] argo_write_number_suite::valid_int: (0.00s)
+[====] Running 3 tests from argo_write_string_suite:
+[RUN ] argo_write_string_suite::mixed_escape_sequence
+[PASS] argo_write_string_suite::mixed_escape_sequence: (0.00s)
+[RUN ] argo_write_string_suite::simple_escape_sequence
+[PASS] argo_write_string_suite::simple_escape_sequence: (0.00s)
+[RUN ] argo_write_string_suite::simple_string
+[PASS] argo_write_string_suite::simple_string: (0.00s)
+[====] Running 9 tests from argo_write_value_suite:
+[RUN ] argo_write_value_suite::nested_canonical
+[PASS] argo_write_value_suite::nested_canonical: (0.00s)
+[RUN ] argo_write_value_suite::nested_pretty_print
+[----] tests/argo_utils.h:113: Assertion failed: Invalid string content.
+[FAIL] argo_write_value_suite::nested_pretty_print: (0.00s)
+[RUN ] argo_write_value_suite::output_to_dev_full
+[PASS] argo_write_value_suite::output_to_dev_full: (0.00s)
+[RUN ] argo_write_value_suite::randomized_storage_indices
+[PASS] argo_write_value_suite::randomized_storage_indices: (0.00s)
+[RUN ] argo_write_value_suite::simple_array_type
+[PASS] argo_write_value_suite::simple_array_type: (0.00s)
+[RUN ] argo_write_value_suite::simple_basic_type
+[----] tests/argo_utils.h:113: Assertion failed: Invalid string content.
+[FAIL] argo_write_value_suite::simple_basic_type: (0.00s)
+[RUN ] argo_write_value_suite::simple_number_type
+[PASS] argo_write_value_suite::simple_number_type: (0.00s)
+[RUN ] argo_write_value_suite::simple_object_type
+[PASS] argo_write_value_suite::simple_object_type: (0.00s)
+[RUN ] argo_write_value_suite::simple_string_type
+[PASS] argo_write_value_suite::simple_string_type: (0.00s)
+[====] Running 7 tests from basecode_suite:
+[RUN ] basecode_suite::argo_basic_test
+ERRORERRORSegmentation fault (core dumped)
+[----] tests/argo_utils.h:147: Assertion failed: Program exited with 0x8b instead of EXIT_SUCCESS
+[FAIL] basecode_suite::argo_basic_test: (0.08s)
+[RUN ] basecode_suite::help_system_test
+[PASS] basecode_suite::help_system_test: (0.00s)
+[RUN ] basecode_suite::validargs_canonicalize_test
+[PASS] basecode_suite::validargs_canonicalize_test: (0.00s)
+[RUN ] basecode_suite::validargs_error_test
+[PASS] basecode_suite::validargs_error_test: (0.00s)
+[RUN ] basecode_suite::validargs_help_test
+[PASS] basecode_suite::validargs_help_test: (0.00s)
+[RUN ] basecode_suite::validargs_pretty_print_test
+[PASS] basecode_suite::validargs_pretty_print_test: (0.00s)
+[RUN ] basecode_suite::validargs_validate_test
+[PASS] basecode_suite::validargs_validate_test: (0.00s)
+[====] Running 5 tests from blackbox_suite:
+[RUN ] blackbox_suite::average_json_test
+Segmentation fault (core dumped)
+[----] tests/argo_utils.h:147: Assertion failed: Program exited with 0x8b instead of EXIT_SUCCESS
+[FAIL] blackbox_suite::average_json_test: (0.09s)
+[RUN ] blackbox_suite::different_spaces_test
+Segmentation fault (core dumped)
+[----] tests/argo_utils.h:147: Assertion failed: Program exited with 0x8b instead of EXIT_SUCCESS
+[FAIL] blackbox_suite::different_spaces_test: (0.09s)
+[RUN ] blackbox_suite::long_json_test
+Segmentation fault (core dumped)
+[----] tests/argo_utils.h:147: Assertion failed: Program exited with 0x8b instead of EXIT_SUCCESS
+[FAIL] blackbox_suite::long_json_test: (0.09s)
+[RUN ] blackbox_suite::non_ascii_test
+ERRORERRORSegmentation fault (core dumped)
+[----] tests/argo_utils.h:147: Assertion failed: Program exited with 0x8b instead of EXIT_SUCCESS
+[FAIL] blackbox_suite::non_ascii_test: (0.09s)
+[RUN ] blackbox_suite::simple_json_test
+Segmentation fault (core dumped)
+[----] tests/argo_utils.h:147: Assertion failed: Program exited with 0x8b instead of EXIT_SUCCESS
+[FAIL] blackbox_suite::simple_json_test: (0.09s)
+[====] Running 6 tests from validargs_suite:
+[RUN ] validargs_suite::help_first_positional_arg_test
+[PASS] validargs_suite::help_first_positional_arg_test: (0.00s)
+[RUN ] validargs_suite::ignore_args_after_help_test
+[PASS] validargs_suite::ignore_args_after_help_test: (0.00s)
+[RUN ] validargs_suite::negative_indent_test
+[PASS] validargs_suite::negative_indent_test: (0.00s)
+[RUN ] validargs_suite::no_args_test
+[PASS] validargs_suite::no_args_test: (0.00s)
+[RUN ] validargs_suite::no_dash_test
+[PASS] validargs_suite::no_dash_test: (0.00s)
+[RUN ] validargs_suite::optional_before_positional_test
+[PASS] validargs_suite::optional_before_positional_test: (0.00s)
+[----] Writing xml report in `crit.xml`.
+[====] Synthesis: Tested: 62 | Passing: 34 | Failing: 28 | Crashing: 2 
