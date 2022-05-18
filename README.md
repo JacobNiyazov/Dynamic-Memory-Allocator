@@ -1,15 +1,3 @@
-# Homework 3 Dynamic Memory Allocator - CSE 320 - Spring 2022
-#### Professor Eugene Stark
-
-### **Due Date: Friday 3/25/2022 @ 11:59pm**
-
-We **HIGHLY** suggest that you read this entire document, the book chapter,
-and examine the base code prior to beginning. If you do not read the entire
-document before beginning, you may find yourself doing extra work.
-
-> :scream: Start early so that you have an adequate amount of time to test
-your program!
-
 > :scream: The functions `malloc`, `free`, `realloc`, `memalign`, `calloc`,
 > etc., are **NOT ALLOWED** in your implementation. If any of these functions,
 > or any other function with similar functionality is found in your program,
