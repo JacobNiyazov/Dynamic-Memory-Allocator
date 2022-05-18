@@ -1,3 +1,0 @@
-10 cat "/usr/share/dict/words" | grep program | grep sub > "pipeline_test.out"
-20 cat "pipeline_test.out"
-run
